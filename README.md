@@ -57,18 +57,19 @@ Ask a Question: What is RAG?
 
 sandySayzzz:
 RAG systems combine retrieval with generation to produce grounded responses.
-How It Works Under the Hood
-Ingestion: Reads notes.txt line by line.
 
-Embedding: Converts each line into a dense mathematical vector representing its semantic meaning.
+## How It Works Under the Hood
+* Ingestion: Reads notes.txt line by line.
 
-Storage: Saves the text and vectors locally to knowledge.json.
+* Embedding: Converts each line into a dense mathematical vector representing its semantic meaning.
 
-Retrieval: Converts your typed question into a vector and uses Cosine Similarity to find the most mathematically relevant notes in the JSON file.
+* Storage: Saves the text and vectors locally to knowledge.json.
 
-Generation: Injects the retrieved notes into a strict prompt and asks the OpenAI chat model to answer your question only using that context.
+* Retrieval: Converts your typed question into a vector and uses Cosine Similarity to find the most mathematically relevant notes in the JSON file.
 
-Project Structure
+* Generation: Injects the retrieved notes into a strict prompt and asks the OpenAI chat model to answer your question only using that context.
+
+## Project Structure
 Simple-RAG-PersonalKnowledgeBaseAgent-System/
 │
 ├── agent.py               # Main application and RAG logic
