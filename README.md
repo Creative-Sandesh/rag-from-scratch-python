@@ -70,6 +70,7 @@ RAG systems combine retrieval with generation to produce grounded responses.
 * Generation: Injects the retrieved notes into a strict prompt and asks the OpenAI chat model to answer your question only using that context.
 
 ## Project Structure
+```
 Simple-RAG-PersonalKnowledgeBaseAgent-System/
 │
 ├── agent.py               # Main application and RAG logic
@@ -77,4 +78,4 @@ Simple-RAG-PersonalKnowledgeBaseAgent-System/
 ├── knowledge.json         # Auto-generated local vector storage
 ├── requirements.txt       # Python dependencies (openai, numpy)
 ├── .gitignore             # Git ignore rules for keys and cache
-└── README.md              # Project documentation
+└── README.md              # Project documentation```
